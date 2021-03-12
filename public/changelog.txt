@@ -1,3 +1,9 @@
+Unblocked Web (1.1.2r1); urgency=medium
+
+	* Bigfix - Import new styles into credits.html
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Fri, 12 Mar 2021 8:59:29 -0500
+
 Unblocked Web (1.1.2); urgency=medium
 
 	* Curved UI for textboxes, navbar, etc.
