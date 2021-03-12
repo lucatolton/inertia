@@ -6,7 +6,10 @@
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jsdom": "^16.5.0",
+    "ws": "^7.4.4"
+  },
   "devDependencies": {},
   "scripts": {
     "start": "node server.js"
