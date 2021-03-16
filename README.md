@@ -11,7 +11,12 @@
 1. Run the app with `npm start`
 1. By default; it should start on 0.0.0.0:8080. It will give the used address and port in the output
 
-# Config Instructions
+## How to use
+* Enter the site address in the input box
+* Click 'GO' or press enter
+* It will take you to that site, unblocked!
+
+## Config Instructions
 * port: Change the port (e.g. 8080)
 * ssl: force https (true/false) (might not work on repl.it)
 * prefix: what comes before the website (e.g. (site)**/web/**_aHR0cHM6Ly9iaXRseS5jb20=_/2OFbpZx)
