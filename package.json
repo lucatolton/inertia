@@ -1,6 +1,6 @@
 {
   "name": "unblocked-sites",
-  "version": "1.0.0",
+  "version": "1.2",
   "description": "A web proxy for unblocking websites",
   "main": "server.js",
   "directories": {
@@ -18,22 +18,11 @@
     "type": "git",
     "url": "git+https://github.com/dragonBall561/unblocked-sites.git"
   },
-  "keywords": [
-    "proxy",
-    "titanium network",
-    "alloy",
-    "alloyproxy",
-    "web unblocker",
-    "unblock",
-    "web proxy",
-    "school",
-    "workplace",
-    "web filter"
-  ],
-  "author": "Titanium Network",
-  "license": "ISC",
+  "keywords": [],
+  "author": "Angad Tendulkar",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/titaniumnetwork-dev/alloy/issues"
+    "url": "https://github.com/dragonBall561/unblocked-sites/issues"
   },
-  "homepage": "https://github.com/titaniumnetwork-dev/alloy#readme"
+  "homepage": "https://github.com/dragonBall561/unblocked-sites/blob/main/README.md"
 }

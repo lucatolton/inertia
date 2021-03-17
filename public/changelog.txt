@@ -1,10 +1,17 @@
-Unblocked Web (1.1.2r1); urgency=medium
+Unblocked Sites (1.2); urgency=medium
+
+	* Auto Google Search if not a Website
+	* Started Uodating Version Number in package.json
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Wed, 17 Mar 2021 1:36:35 -0500 
+
+Unblocked Sites (1.1.2r1); urgency=medium
 
 	* Bigfix - Import new styles into credits.html
 
 -- Angad Tendulkar <angad.tendulkar@gmail.com> Fri, 12 Mar 2021 8:59:29 -0500
 
-Unblocked Web (1.1.2); urgency=medium
+Unblocked Sites (1.1.2); urgency=medium
 
 	* Curved UI for textboxes, navbar, etc.
 	* Darker styles
@@ -12,14 +19,14 @@ Unblocked Web (1.1.2); urgency=medium
 -- Angad Tendulkar <angad.tendulkar@gmail.com> Fri, 12 Mar 2021 8:59:29 -0500
 
 
-Unblocked Web (1.1.1); urgency=medium
+Unblocked Sites (1.1.1); urgency=medium
 	
 	* Added Credits and Changelog
 	
 -- Angad Tendulkar <angad.tendulkar@gmail.com> Mon, 8 Mar 2021 9:24:05 -0500 
 
 
-Unblocked Web (1.1); urgency=medium
+Unblocked Sites (1.1); urgency=medium
 		
 	* Complete UI Redesign
 	* New - Alloy Framework
@@ -27,7 +34,7 @@ Unblocked Web (1.1); urgency=medium
 -- Angad Tendulkar <angad.tendulkar@gmail.com> Fri, 5 Mar 2021 13:01:12 -0500
 
 
-Unblocked Web (1.0); urgency=medium
+Unblocked Sites (1.0); urgency=medium
 
 	* Finish Initial Site
 
