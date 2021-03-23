@@ -1,3 +1,9 @@
+Unblocked Sites (1.2r1); urgency=medium
+
+	* BugFix - Fixed weirdness with NPM versioning
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Thu, 18 Mar 2021 8:10:17 -0500
+
 Unblocked Sites (1.2); urgency=medium
 
 	* Auto Google Search if not a Website

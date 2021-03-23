@@ -1,6 +1,6 @@
 {
   "name": "unblocked-sites",
-  "version": "1.2",
+  "version": "1.2.0",
   "description": "A web proxy for unblocking websites",
   "main": "server.js",
   "directories": {
