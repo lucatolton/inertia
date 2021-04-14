@@ -1,8 +1,8 @@
 {
-    "port": "5000",
+    "port": "8080",
     "ssl": false,
     "prefix": "/web/",
     "localAddresses": [],
     "blockedHostnames": [],
-    "ip": "localhost"
+    "ip": "0.0.0.0"
 }
