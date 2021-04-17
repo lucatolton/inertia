@@ -1,8 +1,16 @@
+Unblocked Sites (1.2r2); urgency=medium
+
+	* Fixed Links
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Sat, 17 Apr 2021 10:45:00 -0500
+
+
 Unblocked Sites (1.2r1); urgency=medium
 
 	* BugFix - Fixed weirdness with NPM versioning
 
 -- Angad Tendulkar <angad.tendulkar@gmail.com> Thu, 18 Mar 2021 8:10:17 -0500
+
 
 Unblocked Sites (1.2); urgency=medium
 
@@ -11,11 +19,13 @@ Unblocked Sites (1.2); urgency=medium
 
 -- Angad Tendulkar <angad.tendulkar@gmail.com> Wed, 17 Mar 2021 1:36:35 -0500 
 
+
 Unblocked Sites (1.1.2r1); urgency=medium
 
 	* Bigfix - Import new styles into credits.html
 
 -- Angad Tendulkar <angad.tendulkar@gmail.com> Fri, 12 Mar 2021 8:59:29 -0500
+
 
 Unblocked Sites (1.1.2); urgency=medium
 
