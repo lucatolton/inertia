@@ -7,7 +7,16 @@
     "lib": "lib"
   },
   "dependencies": {
+    "@heroku-cli/command": "^8.5.0",
+    "@oclif/command": "^1.8.0",
+    "cli-ux": "^5.5.1",
+    "debug": "^4.3.1",
+    "execa": "^5.0.0",
+    "fs-extra": "^10.0.0",
     "jsdom": "^16.5.0",
+    "netrc-parser": "^3.1.6",
+    "tslib": "^2.2.0",
+    "uuid": "^8.3.2",
     "ws": "^7.4.4"
   },
   "devDependencies": {},
