@@ -18,7 +18,6 @@
 
 ## Config Instructions
 * port: Change the port (e.g. 8080)
-* ssl: force https (true/false) (might not work on repl.it)
 * prefix: what comes before the website (e.g. (site)**/web/**_aHR0cHM6Ly9iaXRseS5jb20=_/2OFbpZx)
 * localAddresses: This will change the IP that the proxy makes the request from
 * blockedHostnames: block a site from working

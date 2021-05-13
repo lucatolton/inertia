@@ -46,11 +46,11 @@ const http = require('http'),
 			else error();
 		});
 	},
-	server = config.ssl ? https.createServer({key: fs.readFileSync('./ssl/default.key'), cert: fs.readFileSync('./ssl/default.crt')}, app) : http.createServer(app);
+	server = http.createServer(app);
 
 // Websocket proxy.
 proxy.ws(server);
 
 server.listen(process.env.PORT || config.port, config.ip)
-console.log(`${config.ssl ? 'https://' : 'http://'}${config.ip}:${config.port}`)
+console.log(`http://${config.ip}:${config.port}`)
 
