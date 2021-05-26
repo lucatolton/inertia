@@ -20,19 +20,24 @@ const http = require('http'),
 
 			if (req.query.url && (req.pathname == '/prox' || req.pathname == '/prox/' || req.pathname == '/session' || req.pathname == '/session/')) {
 				var url = atob(req.query.url);
-
-				tlds = []; //TLDs
 				
-				for(var i=0;i<tldEnum.list.length;i++){
-					tlds[i]="."+tldEnum.list[i]; // Add "."'s
-				}
+				if (url.startsWith("%google.search%")) {
+					url = url.substring(15);
+					const replace = true;
+				} else {
+					tlds = [];
+					
+					for(var i = 0; i < tldEnum.list.length; i++){
+						tlds[i] = "." + tldEnum.list[i];
+					}
 
-				for (var i of tlds) {
-					if (url.includes(i)) {
-						var replace = false;
-						break;
-					} else {
-						var replace = true;
+					for (var i of tlds) {
+						if (url.includes(i)) {
+							var replace = false;
+							break;
+						} else {
+							var replace = true;
+						}
 					}
 				}
 				
