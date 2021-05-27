@@ -75,7 +75,7 @@ header #github i {
 }
 
 .form input {
-	width: calc(100% - 158px);
+	width: calc(100% - 154px);
 	height: 50px;
 	left: 0;
 	color: #FFF;
@@ -94,7 +94,7 @@ header #github i {
 }
 
 .form button {
-	width: 60px;
+	width: 150px;
 	height: 50px;
 	color: #FFF;
 	padding: 0px 5px;
