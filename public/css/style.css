@@ -75,7 +75,7 @@ header #github i {
 }
 
 .form input {
-	width: calc(100% - 64px);
+	width: calc(100% - 158px);
 	height: 50px;
 	left: 0;
 	color: #FFF;

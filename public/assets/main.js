@@ -18,7 +18,8 @@ document.querySelector("#initiate").addEventListener('click', () => {
 
 document.querySelector("#ginit").addEventListener('click', () => {
 
-	var input = "%google.search%"+recvinput
+	var recvinput = "%google.search%"+recvinput
+	var input = recvinput
     if (!input.value.trim().length) return;
     window.location.assign(`/prox/?url=${btoa(input.value)}`);
 
