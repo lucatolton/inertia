@@ -1,16 +1,16 @@
-function pushurl (recvinput) {
-	var input = recvinput;
-	if (!input.value.trim().length) return;
-	window.location.assign(`/prox/?url=${btoa(input.value)}`);
-}
+var input = document.querySelector('#url');
 
-function gsearch (form) {
-	recvinput = form.inputbox.value;
-	recvinput = "%googlesearch%"+recvinput;
-	pushurl(recvinput);
-}
+input.addEventListener('keyup', (key) => {
+    if (key.keyCode == 13) { 
+        if (!input.value.trim().length) return;
+        window.location.assign(`/prox/?url=${btoa(input.value)}`);
+    }
+});
 
-function url (form) {
-	recvinput = form.inputbox.value;
-	pushurl(recvinput);
-}
+
+document.querySelector("#initiate").addEventListener('click', () => {
+
+    if (!input.value.trim().length) return;
+    window.location.assign(`/prox/?url=${btoa(input.value)}`);
+
+});

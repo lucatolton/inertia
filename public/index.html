@@ -3,7 +3,6 @@
     <head>
 		<link rel="stylesheet" href="./css/style.css">
 		<title>Unblocked Sites</title>
-		<script src="/assets/main.js"></script>
 	</head>
     <body>
 		<div class="navbar">
@@ -23,14 +22,19 @@
 
             <div class="container">
                 <div class="form">
-                    <input type="text" name="url" placeholder="https://example.org/">
-                    <input type="button" name="submiturl" onClick="url(this.form)">Go</button>
-					<input type="button" name="ginit" onClick="gsearch(this.form)">Search with Google</button>
+                    <input placeholder="https://example.org/" id="url">
+                    <button id="initiate">Go</button>
+                </div>
+
+				<div class="form">
+                    <input placeholder="example" id="gsearch">
+                    <button id="initiate">Search with Google</button>
                 </div>
             </div>
         </div>
 		<div class="footer">
 			<p>Thanks to <a href="https://github.com/titaniumnetwork-dev/alloy">Alloy</a>
 		</div>
+        <script src="/assets/main.js"></script>
     </body>
 </html>
