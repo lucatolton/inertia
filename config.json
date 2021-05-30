@@ -3,5 +3,5 @@
 	"prefix": "/web/",
 	"localAddresses": [],
 	"blockedHostnames": [],
-	"ip": "0.0.0.0"
+	"ip": "localhost"
 }
