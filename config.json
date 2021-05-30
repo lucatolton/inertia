@@ -1,7 +1,7 @@
 {
-	"port": "8080",
+	"port": "8081",
 	"prefix": "/web/",
 	"localAddresses": [],
 	"blockedHostnames": [],
-	"ip": "0.0.0.0"
+	"ip": "localhost"
 }
