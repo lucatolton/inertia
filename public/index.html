@@ -1,10 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-    <head>
+	<head>
 		<link rel="stylesheet" href="./css/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<title>Unblocked Sites</title>
 	</head>
-    <body>
+	
+	<body>
 		<div class="navbar">
 			<a class="left" href="/">Unblocked Sites</a>
 			<a href="https://unblocked-hub.herokuapp.com">Back To Hub</a>
@@ -12,24 +15,36 @@
 			<a href="./changelog.txt">Changelog</a>
 		</div>
 
-        <div class="wrapper">
+		<div class="wrapper">
 			<header>
-            	<div id="intro">
+				<div id="intro">
 					Welcome to Unblocked Sites!
-					<br>NOTE - The URL of this site will be changed if it is blocked by my schools admins
+					<br>NOTE - The URL of this site will be changed if it gets blocked by my schools admins!
 				</div>
-            </header>
+			</header>
 
-            <div class="container">
-                <div class="form">
-                    <input placeholder="https://example.org/" id="url">
-                    <button id="initiate">Go</button>
-                </div>
-            </div>
-        </div>
+			<div class="container">
+				<section id="formWrap">
+					<form class="form" id="formInitiate">
+						<input placeholder="  https://example.org/" name="url">
+						<button>Go</button>
+					</form>
+					<br>
+					<form class="form" id="gsearch">
+						<input placeholder="  example" name="url">
+						<button>
+							google_G
+							Search
+							</button>
+					</form>
+				</section>
+			</div>
+		</div>
+		
 		<div class="footer">
 			<p>Thanks to <a href="https://github.com/titaniumnetwork-dev/alloy">Alloy</a>
 		</div>
-        <script src="/assets/main.js"></script>
-    </body>
+		
+		<script src="/assets/main.js"></script>
+	</body>
 </html>

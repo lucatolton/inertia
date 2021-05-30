@@ -1,6 +1,7 @@
 const http = require('http'),
 	https = require('https'),
 	fs = require('fs'),
+	tldEnum = require('tld-enum');
 	config = require('./config.json'),
 	proxy = new (require('./lib/index'))(config.prefix, {
 		localAddress: config.localAddresses ? config.localAddresses : false,
@@ -19,13 +20,33 @@ const http = require('http'),
 
 			if (req.query.url && (req.pathname == '/prox' || req.pathname == '/prox/' || req.pathname == '/session' || req.pathname == '/session/')) {
 				var url = atob(req.query.url);
+				
+				if (url.startsWith("%google.search%")) {
+					url = url.substring(15);
+					const replace = true;
+				} else {
+					tlds = [];
+					
+					for(var i = 0; i < tldEnum.list.length; i++){
+						tlds[i] = "." + tldEnum.list[i];
+					}
 
-				if (!url.includes('.')) {
+					for (var i of tlds) {
+						if (url.includes(i)) {
+							var replace = false;
+							break;
+						} else {
+							var replace = true;
+						}
+					}
+				}
+				
+				if (replace == true) {
 					url.replace(' ', '+');
 					url = `https://google.com/search?q=${url}`;
 				}
-				else if (url.startsWith('https://') || url.startsWith('http://')) url = url;
-				else if (url.startsWith('//')) url = 'http:' + url;
+
+				if (url.startsWith('https://') || url.startsWith('http://')) url = url;
 				else url = 'http://' + url;
 
 				return (res.writeHead(301, { location: config.prefix + proxy.proxifyRequestURL(url) }), res.end(''));

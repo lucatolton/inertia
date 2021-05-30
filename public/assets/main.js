@@ -1,16 +1,9 @@
-var input = document.querySelector('#url');
-
-input.addEventListener('keyup', (key) => {
-    if (key.keyCode == 13) { 
-        if (!input.value.trim().length) return;
-        window.location.assign(`/prox/?url=${btoa(input.value)}`);
-    }
-});
-
-
-document.querySelector("#initiate").addEventListener('click', () => {
-
-    if (!input.value.trim().length) return;
-    window.location.assign(`/prox/?url=${btoa(input.value)}`);
-
-});
+document.querySelector("#formWrap").addEventListener("submit", e => {
+	e.preventDefault();
+	const data = new FormData(e.target)
+	if (!data.get("url")) return;
+	
+	const param = e.target.id === "gsearch" ? 
+		`https://google.com/search?q=${data.get("url").trim().replace(" ", "+")}` :	data.get("url");
+		window.location.assign(`/prox/?url=${btoa(param)}`);
+})

@@ -1,3 +1,16 @@
+Unblocked Sites (1.5); urgency=medium
+
+	* Google Fonts and Icons
+	* Improved Auto Google Search
+	* Added Manual Google Search
+	* Updated CSS
+	* BugFixes:
+		* Indented url bar placeholders
+		* Fixed Broken Links
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Sun, 30 May 2021 6:20:00 -0500
+
+
 Unblocked Sites (1.4r1); urgency=medium
 
 	* Small Fixes
