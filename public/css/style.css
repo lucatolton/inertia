@@ -93,6 +93,7 @@ header #github i {
 	width: 150px;
 	height: 50px;
 	color: #FFF;
+	float: right;
 	padding: 0px 5px;
 	font-family: "Product Sans";
 	font-size: 14px;
@@ -102,7 +103,7 @@ header #github i {
 	outline: none;
 }
 
-.form input:focus{
+.form button:focus {
 	border: solid 1.2px rgb(255, 255, 255);
 }
 
