@@ -93,12 +93,18 @@ header #github i {
 	width: 150px;
 	height: 50px;
 	color: #FFF;
+	float: right;
 	padding: 0px 5px;
 	font-family: "Product Sans";
 	font-size: 14px;
 	background: none;
 	border-radius: 35px;
 	border: solid 1px rgb(255, 255, 255, .2);
+	outline: none;
+}
+
+.form button:focus {
+	border: solid 1.2px rgb(255, 255, 255);
 }
 
 .navbar {
