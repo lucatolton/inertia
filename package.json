@@ -9,6 +9,7 @@
 	"dependencies": {
 		"@heroku-cli/command": "^8.5.0",
 		"@oclif/command": "^1.8.0",
+		"corrosion": "^1.0.0",
 		"cli-ux": "^5.5.1",
 		"debug": "^4.3.1",
 		"execa": "^5.0.0",
