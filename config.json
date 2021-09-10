@@ -1,7 +1,7 @@
 {
     "port": "8080",
     "ssl": false,
-    "prefix": "/search/",
+    "prefix": "/proxy/",
     "codec": "xor",
     "localAddresses": [],
     "blockedHostnames": []
