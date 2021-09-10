@@ -5,7 +5,7 @@ const http = require('http'),
     config = require('./config.json'),
     Corrosion = require('corrosion'),
     proxy = new Corrosion({
-        prefix: "/proxy/",
+        prefix: config.prefix,
         codec: 'xor'
     }),
     app = (req, res) => {
@@ -20,6 +20,9 @@ const http = require('http'),
             res.setHeader("Content-Type", mime.lookup(req.pathname)), res.writeHead(200), stats.isDirectory() ? fs.existsSync(publicPath + 'index.html') ? fs.createReadStream(publicPath + 'index.html').pipe(res) : error() : !stats.isFile() || publicPath.endsWith("/") ? error() : fs.createReadStream(publicPath).pipe(res);
         });
     },
-    server = http.createServer(app);
+    server = config.ssl ? https.createServer({
+        key: fs.readFileSync("./ssl/ssl.key"),
+        cert: fs.readFileSync("./ssl/ssl.crt")
+    }, app) : http.createServer(app);
 
 server.listen(process.env.PORT || config.port, () => console.log(`${config.ssl ? 'https://' : 'http://'}0.0.0.0:${config.port}`));
