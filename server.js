@@ -21,8 +21,8 @@ const http = require('http'),
         });
     },
     server = config.ssl ? https.createServer({
-        key: fs.readFileSync("./ssl/ssl.key"),
-        cert: fs.readFileSync("./ssl/ssl.crt")
+        key: fs.readFileSync("./ssl/default.key"),
+        cert: fs.readFileSync("./ssl/default.cert")
     }, app) : http.createServer(app);
 
 server.listen(process.env.PORT || config.port, () => console.log(`${config.ssl ? 'https://' : 'http://'}0.0.0.0:${config.port}`));

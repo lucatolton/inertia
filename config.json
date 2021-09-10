@@ -1,6 +1,6 @@
 {
     "port": "8080",
-    "ssl": true,
+    "ssl": false,
     "prefix": "/proxy/",
     "codec": "xor",
     "localAddresses": [],
