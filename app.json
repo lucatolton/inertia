@@ -1,7 +1,7 @@
 {
-	"name": "Unblocked-Sites",
-	"description": "A small webproxy based on Alloy by TitaniumNetworkDev",
-	"repository": "https://github.com/dragonBall561/unblocked-sites/",
+    "name": "Unblocked Sites",
+    "description": "High quality Web-Proxy based around the Corrosion proxy framework.",
+    "repository": "https://github.com/dragonBall561/unblocked-sites/",
 	"logo": "https://avatars.githubusercontent.com/u/47227492?s=200&v=4",
-	"keywords": ["alloy", "proxy", "web-unblocker", "internet", "unblocked-sites", "unblockedsites"]
+    "keywords": ["corrosion", "proxy", "web-unblocker", "internet", "gaming", "unblock", "vanadium", "unblocked-sites"]
 }

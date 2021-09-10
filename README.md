@@ -17,8 +17,8 @@
 * It will take you to that site, unblocked!
 
 ## Config Instructions
-* port: Change the port (e.g. 8080)
-* prefix: what comes before the website (e.g. (site)**/web/**_aHR0cHM6Ly9iaXRseS5jb20=_/2OFbpZx)
+* port: Change the port
+* prefix: what comes before the website
 * localAddresses: This will change the IP that the proxy makes the request from
 * blockedHostnames: block a site from working
 * ip: change the IP
