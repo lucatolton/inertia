@@ -1,0 +1,161 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #060809;
+	color: #FFF;
+	font-family: Product Sans;
+	font-weight: 400;
+	text-align: center;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+.wrapper {
+	width: 100%;
+	padding: 50px;
+	position: absolute;
+	display: flex;
+	flex: 1;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+header {
+	border-radius: 35px;
+	display: block;
+	line-height: 50px;
+	height: 175px;
+	justify-content: space-between;
+	margin: 5px 0px;
+	width: 1079px;
+	padding: 15px 15px;
+	background: #0b0d0f;
+}
+
+header #intro {
+	font-size: 30px;
+	height: 50px;
+	display: block;
+	text-align: center;
+	
+}
+
+header #github, header #github:active, header #github:hover	{
+	height: 50px;
+	width: 205px;
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	color: #FFF;
+}
+
+header #github i {
+	margin: 0px 4px; 
+}
+
+.container {
+	width: 1079px;
+	background: #0b0d0f;
+	padding: 25px;
+	margin: 5px 0px;
+	text-align: left;
+	display: block;
+	border-radius: 35px
+}
+
+.form input {
+	width: calc(100% - 154px);
+	height: 50px;
+	left: 0;
+	color: #FFF;
+	padding: 0px 5px;
+	font-family: "Product Sans";
+	background: none;
+	font-size: 14px;
+	border-radius: 35px;
+	border: solid 1px rgb(255, 255, 255, .2);
+	outline: none;
+	transition: border 750ms;
+}
+
+.form input:focus{
+	border: solid 1.2px rgb(255, 255, 255);
+}
+
+.form button {
+	width: 150px;
+	height: 50px;
+	color: #FFF;
+	float: right;
+	padding: 0px 5px;
+	font-family: "Product Sans";
+	font-size: 14px;
+	background: none;
+	border-radius: 35px;
+	border: solid 1px rgb(255, 255, 255, .2);
+	outline: none;
+}
+
+.form button:focus {
+	border: solid 1.2px rgb(255, 255, 255);
+}
+
+.navbar {
+	background-color: #141819;
+	overflow: hidden;
+	width: 98%;
+	float: center;
+	text-align: center;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 35px;
+	
+}
+
+
+.navbar a {
+	float: right;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background-color: #191e20;
+	color: white;
+}
+
+.navbar a.left {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 98%;
+	margin: 0% 1%;
+	background-color: #141819;
+	color: white;
+	text-align: center;
+	border-radius: 35px 35px 0px 0px;
+}

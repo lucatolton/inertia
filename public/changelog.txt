@@ -1,0 +1,84 @@
+Unblocked Sites (1.5); urgency=medium
+
+	* Google Fonts and Icons
+	* Improved Auto Google Search
+	* Added Manual Google Search
+	* Updated CSS
+	* BugFixes:
+		* Indented url bar placeholders
+		* Fixed Broken Links
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Sun, 30 May 2021 6:20:00 -0500
+
+
+Unblocked Sites (1.4r1); urgency=medium
+
+	* Small Fixes
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Sat, 13 May 2021 10:30:00 -0500
+
+
+Unblocked Sites (1.4); urgency=medium
+
+	* Unify CSS
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Sat, 13 May 2021 10:30:00 -0500
+
+
+Unblocked Sites (1.3r2); urgency=medium
+
+	* Fixed Links
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Sat, 17 Apr 2021 10:45:00 -0500
+
+
+Unblocked Sites (1.3r1); urgency=medium
+
+	* BugFix - Fixed weirdness with NPM versioning
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Thu, 18 Mar 2021 8:10:17 -0500
+
+
+Unblocked Sites (1.3); urgency=medium
+
+	* Auto Google Search if not a Website
+	* Started Uodating Version Number in package.json
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Wed, 17 Mar 2021 13:36:35 -0500 
+
+
+Unblocked Sites (1.2r2); urgency=medium
+
+	* Bigfix - Import new styles into credits.html
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Fri, 12 Mar 2021 8:59:29 -0500
+
+
+Unblocked Sites (1.2); urgency=medium
+
+	* Curved UI for textboxes, navbar, etc.
+	* Darker styles
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Fri, 12 Mar 2021 8:59:29 -0500
+
+
+Unblocked Sites (1.1r1); urgency=medium
+	
+	* Added Credits and Changelog
+	
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Mon, 8 Mar 2021 9:24:05 -0500 
+
+
+Unblocked Sites (1.1); urgency=medium
+		
+	* Complete UI Redesign
+	* New - Alloy Framework
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Fri, 5 Mar 2021 13:01:12 -0500
+
+
+Unblocked Sites (1.0); urgency=medium
+
+	* Finish Initial Site
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Wed, 3 Mar 2021 10:12:19 -0500
