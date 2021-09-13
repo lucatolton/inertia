@@ -1,8 +1,7 @@
 {
-    "port": "8080",
-    "ssl": false,
-    "prefix": "/proxy/",
-    "codec": "xor",
-    "localAddresses": [],
-    "blockedHostnames": []
+	"port": "8080",
+	"prefix": "/web/",
+	"localAddresses": [],
+	"blockedHostnames": [],
+	"ip": "0.0.0.0"
 }
