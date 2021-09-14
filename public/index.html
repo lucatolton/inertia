@@ -2,13 +2,13 @@
 <html lang="en-US">
 	<head>
 		<title>Unblocked Sites</title>
-		<link rel="stylesheet" href="css/imports.css">
+		<link rel="stylesheet" href="/css/style.css">
 	</head>
 	
 	<body>
 		<div class="navbar">
 			<a class="left" href="/">Unblocked Sites</a>
-			<a href="https://unblocked-hub.herokuapp.com">Back To Hub</a>
+			<a href="javascript:void(0)" onClick="settingsOverlay()">Settings</a>
 			<a href="./credits.html">Credits</a>
 			<a href="./changelog.txt">Changelog</a>
 		</div>
@@ -24,25 +24,24 @@
 			<div class="container">
 				<section id="formWrap">
 					<form class="form" id="formInitiate">
-						<input placeholder="  https://example.org/" name="url">
+						<input placeholder="Search Google or Enter URL" name="url">
 						<button>Go</button>
-					</form>
-					<br>
-					<form class="form" id="gsearch">
-						<input placeholder="  example" name="url">
-						<button>
-							google_G
-							Search
-							</button>
 					</form>
 				</section>
 			</div>
 		</div>
+
+		<div id="settingsOverlay" class="settingsOverlay">
+			<i onClick="disableSettingsOverlay()" class="fas fa-times fa-2x"></i>
+			<h1>Settings</h1>
+		</div>
 		
 		<div class="footer">
 			<p>Thanks to <a href="https://github.com/titaniumnetwork-dev/alloy">Alloy</a>
+			
 		</div>
 		
 		<script src="/assets/main.js"></script>
+		<script src="/assets/ui.js"></script>
 	</body>
 </html>
