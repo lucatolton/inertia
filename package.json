@@ -7,7 +7,6 @@
 		"lib": "lib"
 	},
 	"dependencies": {
-		"@heroku-cli/command": "^8.5.0",
 		"@oclif/command": "^1.8.0",
 		"cli-ux": "^5.5.1",
 		"debug": "^4.3.1",
@@ -20,7 +19,6 @@
 		"uuid": "^8.3.2",
 		"ws": "^7.4.4"
 	},
-	"devDependencies": {},
 	"scripts": {
 		"start": "node server.js"
 	},
