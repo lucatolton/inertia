@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Product+Sans");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("/assets/fa/css/all.min.css");
 
 #settingsOverlay {
 	position: fixed; /* Sit on top of the page content */
