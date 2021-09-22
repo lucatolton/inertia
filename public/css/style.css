@@ -185,6 +185,7 @@ header #github i {
 	padding: 10px;
 	text-align: center;
 	border-radius: 25px;
+	cursor: pointer;
 }
 
 .settingsOverlay span:hover {
