@@ -177,18 +177,17 @@ header #github i {
 	border-radius: 35px 35px 0px 0px;
 }
 
-.settingsOverlay i {
+.settingsOverlay span {
 	color: white;
 	float: right;
 	height: 50px;
 	width: 50px;
 	padding: 10px;
-	margin: 10px;
 	text-align: center;
 	border-radius: 25px;
 }
 
-.settingsOverlay i:hover {
+.settingsOverlay span:hover {
 	background-color: #191e20;
 	color: white;
 	border-radius: 25px;
