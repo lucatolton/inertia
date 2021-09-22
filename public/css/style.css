@@ -195,3 +195,12 @@ header #github i {
 	color: white;
 	border-radius: 25px;
 }
+
+.uiBox {
+	display: inline-block; /* Hidden by default */
+	width: 10%; /* Full width (cover the whole page) */
+	height: 10%; /* Full height (cover the whole page) */
+	border-radius: 25px;
+	background-color: #18191a; /* Black background with opacity */
+	z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+}
