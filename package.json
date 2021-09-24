@@ -7,7 +7,6 @@
 		"lib": "lib"
 	},
 	"dependencies": {
-		"@heroku-cli/command": "^8.5.0",
 		"@oclif/command": "^1.8.0",
 		"cli-ux": "^5.5.1",
 		"debug": "^4.3.1",
@@ -26,13 +25,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/dragonBall561/unblocked-sites.git"
+		"url": "git+https://github.com/TheAlphaReturns/unblocked-sites.git"
 	},
 	"keywords": [],
 	"author": "Angad Tendulkar",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/dragonBall561/unblocked-sites/issues"
+		"url": "https://github.com/TheAlphaReturns/unblocked-sites/issues"
 	},
-	"homepage": "https://github.com/dragonBall561/unblocked-sites/blob/main/README.md"
+	"homepage": "https://github.com/TheAlphaReturns/unblocked-sites/blob/main/README.md"
 }
