@@ -196,11 +196,23 @@ header #github i {
 	border-radius: 25px;
 }
 
-.uiBox {
-	display: inline-block; /* Hidden by default */
-	width: 10%; /* Full width (cover the whole page) */
-	height: 10%; /* Full height (cover the whole page) */
-	border-radius: 25px;
-	background-color: #18191a; /* Black background with opacity */
-	z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+#uiBoxImg {
+	display: inline-block;
+	width: 350px;
+	height: 160px;
+	border-radius: 25px 25px 0px 0px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#uiBoxText {
+	display: inline-block;
+	width: 350px;
+	height: 40px;
+	text-decoration: none;
+	background-color: #2b2c2e;
+	border-radius: 0px 0px 25px 25px;
+	margin-left: 30px;
+	margin-right: 30px;
+	text-decoration: none;
 }
