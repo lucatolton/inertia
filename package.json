@@ -1,37 +1,37 @@
 {
-	"name": "unblocked-sites",
-	"version": "1.2.0",
-	"description": "A web proxy for unblocking websites",
-	"main": "server.js",
-	"directories": {
-		"lib": "lib"
-	},
-	"dependencies": {
-		"@oclif/command": "^1.8.0",
-		"cli-ux": "^5.5.1",
-		"debug": "^4.3.1",
-		"execa": "^5.0.0",
-		"fs-extra": "^10.0.0",
-		"jsdom": "^16.5.0",
-		"netrc-parser": "^3.1.6",
-		"tld-enum": "^2.0.6",
-		"tslib": "^2.2.0",
-		"uuid": "^8.3.2",
-		"ws": "^7.4.4"
-	},
-	"devDependencies": {},
-	"scripts": {
-		"start": "node server.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/TheAlphaReturns/unblocked-sites.git"
-	},
-	"keywords": [],
-	"author": "Angad Tendulkar",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/TheAlphaReturns/unblocked-sites/issues"
-	},
-	"homepage": "https://github.com/TheAlphaReturns/unblocked-sites/blob/main/README.md"
+  "name": "unblocked-sites-env",
+  "version": "1.2.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "cli-ux": "^5.5.1",
+    "debug": "^4.3.1",
+    "execa": "^5.0.0",
+    "fs-extra": "^10.0.0",
+    "jsdom": "^16.5.0",
+    "netrc-parser": "^3.1.6",
+    "tld-enum": "^2.0.6",
+    "tslib": "^2.2.0",
+    "uuid": "^8.3.2",
+    "ws": "^7.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheAlphaReturns/unblocked-sites.git"
+  },
+  "keywords": [],
+  "author": "Angad Tendulkar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheAlphaReturns/unblocked-sites/issues"
+  },
+  "homepage": "https://github.com/TheAlphaReturns/unblocked-sites/blob/main/README.md"
 }

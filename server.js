@@ -2,7 +2,7 @@ const http = require("http");
 const https = require("https");
 const fs = require("fs");
 const tldEnum = require("tld-enum");
-const config = require("./config.json");
+const config = require("./public/assets/config.json");
 const proxy = new (require("./lib/index"))(config.prefix, {
 	localAddress: config.localAddresses ? config.localAddresses : false,
 	blacklist: config.blockedHostnames ? config.blockedHostnames : false
