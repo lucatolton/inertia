@@ -23,13 +23,14 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #060809;
-	color: #FFF;
+	color: #fff;
 	font-family: Product Sans;
 	font-weight: 400;
 	text-align: center;
 }
 
-h1, h2 {
+h1,
+h2 {
 	font-weight: 400;
 }
 
@@ -61,20 +62,21 @@ header #intro {
 	height: 50px;
 	display: block;
 	text-align: center;
-	
 }
 
-header #github, header #github:active, header #github:hover	{
+header #github,
+header #github:active,
+header #github:hover {
 	height: 50px;
 	width: 205px;
 	font-size: 20px;
 	display: block;
 	text-align: center;
-	color: #FFF;
+	color: #fff;
 }
 
 header #github i {
-	margin: 0px 4px; 
+	margin: 0px 4px;
 }
 
 .container {
@@ -84,39 +86,39 @@ header #github i {
 	margin: 5px 0px;
 	text-align: left;
 	display: block;
-	border-radius: 35px
+	border-radius: 35px;
 }
 
 .form input {
 	width: calc(100% - 154px);
 	height: 50px;
 	left: 0;
-	color: #FFF;
+	color: #fff;
 	padding: 0px 5px;
 	font-family: "Product Sans";
 	background: none;
 	font-size: 14px;
 	border-radius: 35px;
-	border: solid 1px rgb(255, 255, 255, .2);
+	border: solid 1px rgb(255, 255, 255, 0.2);
 	outline: none;
 	transition: border 750ms;
 }
 
-.form input:focus{
+.form input:focus {
 	border: solid 1.2px rgb(255, 255, 255);
 }
 
 .form button {
 	width: 150px;
 	height: 50px;
-	color: #FFF;
+	color: #fff;
 	float: right;
 	padding: 0px 5px;
 	font-family: "Product Sans";
 	font-size: 14px;
 	background: none;
 	border-radius: 35px;
-	border: solid 1px rgb(255, 255, 255, .2);
+	border: solid 1px rgb(255, 255, 255, 0.2);
 	outline: none;
 }
 
@@ -133,9 +135,7 @@ header #github i {
 	margin: auto;
 	margin-top: 10px;
 	border-radius: 35px;
-	
 }
-
 
 .navbar a {
 	float: right;
@@ -161,7 +161,7 @@ header #github i {
 }
 
 .navbar a.active {
-	background-color: #4CAF50;
+	background-color: #4caf50;
 	color: white;
 }
 

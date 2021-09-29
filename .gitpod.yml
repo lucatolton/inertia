@@ -10,5 +10,5 @@ ports:
 tasks:
     - init: npm install
       command: npm start
-    
+
     - command: sudo cp /workspace/ssh_config /etc/ssh
