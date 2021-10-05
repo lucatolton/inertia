@@ -106,4 +106,4 @@ proxy.ws(server);
 const port = config.port || process.env.PORT || "8080";
 const ip = config.ip || process.env.IP || "0.0.0.0";
 server.listen(port, ip);
-console.log(`http://${port}:${ip}`);
+console.log(`http://${ip}:${port}`);
