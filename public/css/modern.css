@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Product+Sans");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+:root {
+	--accents: #202124;
+	--backgrounds: #202124;
+	--navbg: #303134;
+	--textcolor: white;
+	--outlines: #27282b;
+	--hovers: #3c4043;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+::placeholder {
+	color: var(--textcolor)
+}
+
+#settingsOverlay {
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 70%; /* Full width (cover the whole page) */
+	height: 70%; /* Full height (cover the whole page) */
+	top: 15%;
+	left: 15%;
+	right: 15%;
+	bottom: 15%;
+	border: solid 2px var(--outlines);
+	background-color: var(--accents); /* Black background with opacity */
+	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: var(--backgrounds);
+	color: var(--textcolor);
+	font-family: Product Sans;
+	font-weight: 400;
+	text-align: center;
+}
+
+h1,
+h2 {
+	font-weight: 400;
+}
+
+.wrapper {
+	width: 100%;
+	padding: 50px;
+	position: absolute;
+	display: flex;
+	flex: 1;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+header {
+	display: block;
+	line-height: 50px;
+	height: 175px;
+	justify-content: space-between;
+	margin: 5px 0px;
+	width: 1079px;
+	padding: 15px 15px;
+	border: solid 2px var(--outlines);
+	background: var(--accents);
+}
+
+header #intro {
+	font-size: 30px;
+	height: 50px;
+	display: block;
+	text-align: center;
+}
+
+header #github i {
+	margin: 0px 4px;
+}
+
+.container {
+	width: 1079px;
+	background: var(--accents);
+	padding: 25px;
+	margin: 5px 0px;
+	text-align: left;
+	display: block;
+	border: solid 2px var(--outlines);
+}
+
+.form input {
+	width: calc(100% - 154px);
+	height: 50px;
+	left: 0;
+	color: var(--textcolor);
+	padding: 0px 5px;
+	font-family: "Product Sans";
+	background: none;
+	font-size: 14px;
+	border: solid 2px var(--outlines);
+	outline: none;
+	transition: border 750ms;
+}
+
+.form button {
+	width: 150px;
+	height: 50px;
+	color: var(--textcolor);
+	float: right;
+	padding: 0px 5px;
+	font-family: "Product Sans";
+	font-size: 14px;
+	background: none;
+	border: solid 2px var(--outlines);
+	outline: none;
+}
+
+.navbar {
+	background-color: var(--navbg);
+	overflow: hidden;
+	width: 100%;
+	float: center;
+	text-align: center;
+	margin: auto;
+}
+
+.navbar a {
+	float: right;
+	color: var(--textcolor);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background-color: var(--hovers);
+	color: white;
+}
+
+.navbar a.left {
+	float: left;
+	color: var(--textcolor);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: var(--navbg);
+	color: white;
+	text-align: center;
+}
+
+.settingsOverlay span {
+	color: white;
+	height: 50px;
+	width: 50px;
+	margin: 10px 10px 0px 0px;
+	padding: 5px 5px 0px 0px;
+	text-align: right;
+	float: right;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.settingsOverlay span:hover {
+	background-color: var(--hovers);
+	color: white;
+}
+
+#uiBoxImg {
+	display: inline-block;
+	width: 350px;
+	height: 160px;
+	margin-left: 30px;
+	margin-right: 30px;
+	border: solid 2px var(--outlines);
+}
+
+#uiBoxText {
+	display: inline-block;
+	width: 350px;
+	height: 40px;
+	border: solid 2px var(--outlines);
+	text-decoration: none;
+	background-color: var(--navbg);
+	margin-left: 30px;
+	margin-right: 30px;
+}
