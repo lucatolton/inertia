@@ -15,7 +15,7 @@
 }
 
 ::placeholder {
-	color: var(--textcolor)
+	color: var(--textcolor);
 }
 
 #settingsOverlay {
