@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<link href="/css/modern.css" id="css" rel="stylesheet" />
+		<title>About - Interia</title>
+	</head>
+
+	<body>
+		<div class="navbar">
+			<a class="left" href="/">Inertia</a>
+			<a href="javascript:void(0)" onClick="enableSettingsOverlay()"
+				>Settings</a
+			>
+			<a href="./credits.html">Credits</a>
+			<a href="./changelog.txt">Changelog</a>
+		</div>
+
+		<div class="wrapper">
+			<div class="container">
+				<h1>Intertia</h1>
+				<p>
+					This is a webproxy which started out as a fork of
+					Titaniumnetwork's Alloyproxy, named Unblocked Sites. Since
+					then, it has had many updates, not just to the frontend, but
+					the backend too. Additions such as Google Search and two new
+					UI's, made it stronger that it has ever been. With this
+					update, we have renamed the site "Interia", because this
+					object in motion, will stay in motion!
+				</p>
+
+				<h1>Credits</h1>
+				<ul>
+					<li>
+						<a
+							href="https://github.com/titaniumnetwork-dev/alloy/"
+							target="_black"
+							>Alloy</a
+						>, for the initial framework
+					</li>
+
+					<li>
+						Angad Tendulkar
+						<a
+							href="mailto:angad.tendulkar@gmail.com"
+							target="_black"
+							>&ltangad.tendulkar@gmail.com&gt</a
+						>, for all improvements and updates since our start.
+					</li>
+
+					<li>
+						The Shaker Coding Club, for all the support they have
+						given me.
+					</li>
+
+					<li>
+						<a href="https://stackoverflow.com" target="_blank"
+							>StackOverflow,</a
+						>
+						because who <em>doesn't</em> copy-paste code from there.
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="settingsOverlay" class="settingsOverlay">
+			<span onClick="disableSettingsOverlay()" class="material-icons">
+				close
+			</span>
+
+			<h1>Settings</h1>
+
+			<a
+				style="display: inline-block"
+				href="javascript:void(0)"
+				onClick="newCss()"
+			>
+				<img id="uiBoxImg" src="/assets/res/modern.jpg" />
+			</a>
+
+			<a
+				style="display: inline-block"
+				href="javascript:void(0)"
+				onClick="oldCss()"
+			>
+				<img id="uiBoxImg" src="/assets/res/rounded.jpg" />
+			</a>
+
+			<a
+				style="display: inline-block; color: #ffffff"
+				href="javascript:void(0)"
+				onClick="newCss()"
+			>
+				<div id="uiBoxText">Modern</div>
+			</a>
+
+			<a
+				style="display: inline-block; color: #ffffff"
+				href="javascript:void(0)"
+				onClick="oldCss()"
+			>
+				<div id="uiBoxText">Rounded</div>
+			</a>
+		</div>
+
+		<div class="footer">
+			<p>
+				Project on
+				<a
+					href="https://github.com/dragonBall561/unblocked-sites"
+					target="_blank"
+					>GitHub</a
+				>
+			</p>
+		</div>
+
+		<script src="/js/ui.js"></script>
+	</body>
+</html>
