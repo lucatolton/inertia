@@ -1,14 +1,16 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en-US">
 	<head>
 		<title>Unblocked Sites</title>
-		<link rel="stylesheet" id="css" href="/css/modern.css">
+		<link rel="stylesheet" id="css" href="/css/modern.css" />
 	</head>
-	
+
 	<body>
 		<div class="navbar">
 			<a class="left" href="/">Inertia</a>
-			<a href="javascript:void(0)" onClick="settingsOverlay()">Settings</a>
+			<a href="javascript:void(0)" onClick="settingsOverlay()"
+				>Settings</a
+			>
 			<a href="./credits.html">Credits</a>
 			<a href="./changelog.txt">Changelog</a>
 		</div>
@@ -17,15 +19,22 @@
 			<header>
 				<div id="intro">
 					Welcome to Inertia Unblocker!
-					<br>Check the <a href="javascript:void(0)">Discord</a> for the new URL if this website gits blocked. <!-- No Discord Yet lol -->
-					<br>By using this site, you agree to Cookies, for Google Analytics and Theme
+					<br />Check the <a href="javascript:void(0)">Discord</a> for
+					the new URL if this website gits blocked.
+					<!-- No Discord Yet lol -->
+					<br />By using this site, you agree to Cookies, for Google
+					Analytics and Theme
 				</div>
 			</header>
 
 			<div class="container">
 				<section id="formWrap">
-					<form class="form" id="formInitiate">
-						<input placeholder="Search Google or Enter URL" name="url" autocomplete="off" color="#fff">
+					<form class="form" id="form">
+						<input
+							placeholder="Search Google or Enter URL"
+							name="url"
+							autocomplete="off"
+						/>
 						<button>Go</button>
 					</form>
 				</section>
@@ -36,35 +45,49 @@
 			<span onClick="disableSettingsOverlay()" class="material-icons">
 				close
 			</span>
-			
+
 			<h1>Settings</h1>
 
-			<a style="display: inline-block;" href="javascript:void(0)" onClick="newCss()"> 
-				<img id="uiBoxImg" src="/assets/res/modern.jpg"></img>
-			</a>
-			
-			<a style="display: inline-block;" href="javascript:void(0)" onClick="oldCss()"> 
-				<img id="uiBoxImg" src="/assets/res/rounded.jpg"></img>
-			</a>
-			
-			<a style="display: inline-block; color: #ffffff;" href="javascript:void(0)" onClick="newCss()">
-				<div id="uiBoxText">
-					Modern
-				</div>
+			<a
+				style="display: inline-block"
+				href="javascript:void(0)"
+				onClick="newCss()"
+			>
+				<img id="uiBoxImg" src="/assets/res/modern.jpg" />
 			</a>
 
-			<a style="display: inline-block; color: #ffffff;" href="javascript:void(0)" onClick="oldCss()">
-				<div id="uiBoxText">
-					Rounded
-				</div>
+			<a
+				style="display: inline-block"
+				href="javascript:void(0)"
+				onClick="oldCss()"
+			>
+				<img id="uiBoxImg" src="/assets/res/rounded.jpg" />
+			</a>
+
+			<a
+				style="display: inline-block; color: #ffffff"
+				href="javascript:void(0)"
+				onClick="newCss()"
+			>
+				<div id="uiBoxText">Modern</div>
+			</a>
+
+			<a
+				style="display: inline-block; color: #ffffff"
+				href="javascript:void(0)"
+				onClick="oldCss()"
+			>
+				<div id="uiBoxText">Rounded</div>
 			</a>
 		</div>
-		
+
 		<div class="footer">
-			<p>Thanks to <a href="https://github.com/titaniumnetwork-dev/alloy">Alloy</a>	
+			<p>
+				Thanks to
+				<a href="https://github.com/titaniumnetwork-dev/alloy">Alloy</a>
+			</p>
 		</div>
-	
-		
+
 		<script src="/js/main.js"></script>
 		<script src="/js/ui.js"></script>
 	</body>

@@ -1,16 +1,14 @@
-const config = require("./config.json");
+var input = document.querySelector("#url");
+const config = require("/assets/config.json");
 
-document.querySelector("#formWrap").addEventListener("submit", (e) => {
-	e.preventDefault();
-	const data = new FormData(e.target);
-	if (!data.get("url")) return;
+input.addEventListener("keyup", (key) => {
+	if (key.keyCode == 13) {
+		if (!input.value.trim().length) return;
+		window.location.assign(`/${config.prefix}/?url=${btoa(input.value)}`);
+	}
+});
 
-	const param =
-		e.target.id === "gsearch"
-			? `https://google.com/search?q=${data
-					.get("url")
-					.trim()
-					.replace(" ", "+")}`
-			: data.get("url");
-	window.location.assign(`/${config.prefix}/?url=${btoa(param)}`);
+document.querySelector("#form").addEventListener("click", () => {
+	if (!input.value.trim().length) return;
+	window.location.assign(`/${config.prefix}/?url=${btoa(input.value)}`);
 });

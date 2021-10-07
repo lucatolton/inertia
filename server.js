@@ -30,26 +30,23 @@ const app = (req, res) => {
 					.join("="))
 		);
 
-	if (req.query.url && req.pathname == `${config.prefix}`) {
+	if (
+		(req.query.url && req.pathname == `${config.prefix}`) ||
+		req.pathname == `${config.prexix}/`
+	) {
 		var url = atob(req.query.url);
 
-		if (url.startsWith("%google.search%")) {
-			url = url.substring(15);
-			const replace = true;
-		} else {
-			let tlds = [];
+		let tlds = [];
+		for (var i = 0; i < tldEnum.list.length; i++) {
+			tlds[i] = "." + tldEnum.list[i];
+		}
 
-			for (var i = 0; i < tldEnum.list.length; i++) {
-				tlds[i] = "." + tldEnum.list[i];
-			}
-
-			for (var i of tlds) {
-				if (url.includes(i)) {
-					var replace = false;
-					break;
-				} else {
-					var replace = true;
-				}
+		for (var i of tlds) {
+			if (url.includes(i)) {
+				var replace = false;
+				break;
+			} else {
+				var replace = true;
 			}
 		}
 
