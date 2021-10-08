@@ -1,5 +1,5 @@
 {
-	"name": "unblocked-sites",
+	"name": "intertia",
 	"version": "1.2.0",
 	"description": "A web proxy for unblocking websites",
 	"main": "server.js",
@@ -14,12 +14,14 @@
 		"fs-extra": "^10.0.0",
 		"jsdom": "^16.5.0",
 		"netrc-parser": "^3.1.6",
+		"prettier": "^2.4.1",
 		"tld-enum": "^2.0.6",
 		"tslib": "^2.2.0",
 		"uuid": "^8.3.2",
 		"ws": "^7.4.4"
 	},
 	"scripts": {
+		"cli:format": "prettier --config ./.prettierrc --ignore-path ./.prettierignore --write .",
 		"start": "node server.js"
 	},
 	"repository": {
