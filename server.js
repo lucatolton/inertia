@@ -45,15 +45,21 @@ const http = require("http"),
 			}
 
 			for (var i of tlds) {
-				if (url.includes(i)) {
-					var replace = false;
+				let domain = i
+				let container = i + "/"
+
+				if (url.endsWith(domain)) {
+					var google = false;
+					break;
+				} else if (url.contains(container)) {
+					var google = false;
 					break;
 				} else {
-					var replace = true;
+					var google = true;
 				}
 			}
 
-			if (replace == true) {
+			if (google == true) {
 				url.replace(" ", "+")
 					.replace("#", "%23")
 					.replace("$", "%24")
