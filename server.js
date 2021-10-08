@@ -122,7 +122,7 @@ const http = require("http"),
 // Websocket proxy.
 proxy.ws(server);
 
-let port = config.port || process.env.PORT || "8080"
-let ip = config.ip || process.env.IP || "0.0.0.0"
+let port = config.port || process.env.PORT || "8080";
+let ip = config.ip || process.env.IP || "0.0.0.0";
 server.listen(port, ip);
 console.log(`http://${ip}:${port}`);
