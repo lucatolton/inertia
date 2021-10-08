@@ -1,12 +1,5 @@
 {
-	"ip": "0.0.0.0", // The IP (http://ip:port)
-	"port":"8080", // The Port (http://ip:port)
-	"localAddresses": [], 	/* 
-								Changes the IP that that 
-								the proxy makes the request from 
-								Don't tinker with this option 
-								unless you know what you are doing.
-							*/
-	"blockedHostnames": [], // Blocked URLS
-	
+	"ip": "0.0.0.0",
+	"port": "8080",
+	"blockedHostnames": []
 }

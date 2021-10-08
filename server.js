@@ -4,7 +4,7 @@ const http = require("http"),
 	tldEnum = require("tld-enum"),
 	config = require("./config.json"),
 	proxy = new (require("./lib/index"))("/web/", {
-		localAddress: config.localAddresses ? config.localAddresses : false,
+		localAddress: false,
 		blacklist: config.blockedHostnames ? config.blockedHostnames : false
 	}),
 	index_file = "index.html",
