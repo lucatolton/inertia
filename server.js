@@ -11,7 +11,7 @@ const http = require("http"),
 	atob = (str) => new Buffer.from(str, "base64").toString("utf-8"),
 	app = (req, res) => {
 		// HTTP(S) proxy.
-		if (req.url.startsWith(config.prefix)) return proxy.http(req, res);
+		if (req.url.startsWith("/web/")) return proxy.http(req, res);
 
 		req.pathname = req.url.split("#")[0].split("?")[0];
 		req.query = {};
@@ -38,38 +38,53 @@ const http = require("http"),
 		) {
 			var url = atob(req.query.url);
 
-			if (url.startsWith("%google.search%")) {
-				url = url.substring(15);
-				const replace = true;
-			} else {
-				tlds = [];
+			tlds = [];
 
-				for (var i = 0; i < tldEnum.list.length; i++) {
-					tlds[i] = "." + tldEnum.list[i];
-				}
+			for (var i = 0; i < tldEnum.list.length; i++) {
+				tlds[i] = "." + tldEnum.list[i];
+			}
 
-				for (var i of tlds) {
-					if (url.includes(i)) {
-						var replace = false;
-						break;
-					} else {
-						var replace = true;
-					}
+			for (var i of tlds) {
+				if (url.includes(i)) {
+					var replace = false;
+					break;
+				} else {
+					var replace = true;
 				}
 			}
 
 			if (replace == true) {
-				url.replace(" ", "+");
+				url.replace(" ", "+")
+					.replace("#", "%23")
+					.replace("$", "%24")
+					.replace("%", "%25")
+					.replace("&", "%26")
+					.replace("'", "%27")
+					.replace("@", "%40")
+					.replace("+", "%2B")
+					.replace(",", "%2C")
+					.replace("/", "%2F")
+					.replace(":", "%3A")
+					.replace(";", "%3B")
+					.replace("=", "%3D")
+					.replace("?", "%3F")
+					.replace("[", "%5B")
+					.replace("\\", "%5C")
+					.replace("]", "%5D")
+					.replace("{", "%7B")
+					.replace("|", "%7C")
+					.replace("}", "%7D");
 				url = `https://google.com/search?q=${url}`;
 			}
 
-			if (url.startsWith("https://") || url.startsWith("http://"))
-				url = url;
-			else url = "http://" + url;
+			if (url.startsWith("https://") || url.startsWith("http://")) {
+			} else {
+				url = "http://" + url;
+			}
 
 			return (
 				res.writeHead(301, {
-					location: config.prefix + proxy.proxifyRequestURL(url)
+					location: "/web/" + proxy.proxifyRequestURL(url)
 				}),
 				res.end("")
 			);

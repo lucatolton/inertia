@@ -3,12 +3,6 @@ document.querySelector("#formWrap").addEventListener("submit", (e) => {
 	const data = new FormData(e.target);
 	if (!data.get("url")) return;
 
-	const param =
-		e.target.id === "gsearch"
-			? `https://google.com/search?q=${data
-					.get("url")
-					.trim()
-					.replace(" ", "+")}`
-			: data.get("url");
+	const param = data.get("url");
 	window.location.assign(`/prox/?url=${btoa(param)}`);
 });
