@@ -15,14 +15,22 @@
 
 ## How to use
 
--   Enter the site address in the input box
--   Click 'GO' or press enter
--   It will take you to that site, unblocked!
+1.   Enter the site address in the input box
+1.   Click 'GO' or press enter
+1.   It will take you to that site, unblocked!
 
-## Config Instructions
+## The config file (`config.json`)
 
--   port: Change the port (e.g. 8080)
--   prefix: what comes before the website (e.g. (site)**/web/**_aHR0cHM6Ly9iaXRseS5jb20=_/2OFbpZx)
--   localAddresses: This will change the IP that the proxy makes the request from
--   blockedHostnames: block a site from working
--   ip: change the IP
+```json
+{
+	"ip": "0.0.0.0", // The IP (http://ip:port)
+	"port":"8080", // The Port (http://ip:port)
+	"localAddresses": [], 	/* 
+								Changes the IP that that 
+								the proxy makes the request from 
+								Don't tinker with this option 
+								unless you know what you are doing.
+							*/
+	"blockedHostnames": [], // Blocked URLS
+}
+```

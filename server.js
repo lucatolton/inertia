@@ -3,7 +3,7 @@ const http = require("http"),
 	fs = require("fs"),
 	tldEnum = require("tld-enum"),
 	config = require("./config.json"),
-	proxy = new (require("./lib/index"))(config.prefix, {
+	proxy = new (require("./lib/index"))("/web/", {
 		localAddress: config.localAddresses ? config.localAddresses : false,
 		blacklist: config.blockedHostnames ? config.blockedHostnames : false
 	}),
