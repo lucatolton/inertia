@@ -1,4 +1,4 @@
-# unblocked-sites
+# inertia
 
 ## About
 
