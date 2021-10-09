@@ -18,20 +18,6 @@
 	color: var(--textcolor);
 }
 
-#settingsOverlay {
-	position: fixed; /* Sit on top of the page content */
-	display: none; /* Hidden by default */
-	width: 70%; /* Full width (cover the whole page) */
-	height: 70%; /* Full height (cover the whole page) */
-	top: 15%;
-	left: 15%;
-	right: 15%;
-	bottom: 15%;
-	border: solid 2px var(--outlines);
-	background-color: var(--accents); /* Black background with opacity */
-	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-}
-
 body {
 	margin: 0;
 	padding: 0;
@@ -157,6 +143,20 @@ header #github i {
 	background-color: var(--navbg);
 	color: white;
 	text-align: center;
+}
+
+#settingsOverlay {
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 70%; /* Full width (cover the whole page) */
+	height: 70%; /* Full height (cover the whole page) */
+	top: 15%;
+	left: 15%;
+	right: 15%;
+	bottom: 15%;
+	border: solid 2px var(--outlines);
+	background-color: var(--accents); /* Black background with opacity */
+	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
 
 .settingsOverlay span {

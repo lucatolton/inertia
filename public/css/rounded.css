@@ -1,20 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Product+Sans");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-#settingsOverlay {
-	position: fixed; /* Sit on top of the page content */
-	display: none; /* Hidden by default */
-	width: 70%; /* Full width (cover the whole page) */
-	height: 70%; /* Full height (cover the whole page) */
-	top: 15%;
-	left: 15%;
-	right: 15%;
-	bottom: 15%;
-	border-radius: 25px;
-	background-color: #18191a; /* Black background with opacity */
-	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-}
-
 * {
 	box-sizing: border-box;
 }
@@ -175,6 +161,20 @@ header #github i {
 	color: white;
 	text-align: center;
 	border-radius: 35px 35px 0px 0px;
+}
+
+#settingsOverlay {
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 70%; /* Full width (cover the whole page) */
+	height: 70%; /* Full height (cover the whole page) */
+	top: 15%;
+	left: 15%;
+	right: 15%;
+	bottom: 15%;
+	border-radius: 25px;
+	background-color: #18191a; /* Black background with opacity */
+	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
 
 .settingsOverlay span {

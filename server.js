@@ -46,12 +46,12 @@ const http = require("http"),
 
 			for (var i of tlds) {
 				let domain = i
-				let container = i + "/"
+				let has = i + "/"
 
 				if (url.endsWith(domain)) {
 					var google = false;
 					break;
-				} else if (url.contains(container)) {
+				} else if (url.includes(has)) {
 					var google = false;
 					break;
 				} else {
