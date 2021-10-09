@@ -1,3 +1,10 @@
+Unblocked Sites 1.6r1; urgency=medium
+	
+	* BugFixes
+	* Site Icon
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Set, 9 Oct 2021 3:10:00 -0500
+
 Unblocked Sites (1.6); urgency=medium
 
 	* Redesign UI
