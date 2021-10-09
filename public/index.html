@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<title>Intertia</title>
+		<title>Inertia</title>
 		<link rel="stylesheet" id="css" href="/css/modern.css" />
 	</head>
 
@@ -47,43 +47,33 @@
 				close
 			</span>
 
-			<h1>Settings</h1>
+			<h1 style="text-indent: 1.75em">Settings</h1>
 
-			<a href="javascript:void(0)" onClick="newCss()">
-				<img id="uiBoxImg" src="/assets/res/modern.jpg" />
-			</a>
+			<h2>User Interface</h2>
 
-			<a
-				style="display: block"
-				href="javascript:void(0)"
-				onClick="oldCss()"
-			>
-				<img id="uiBoxImg" src="/assets/res/rounded.jpg" />
-			</a>
-
-			<a
-				style="display: inline-block; color: #ffffff"
-				href="javascript:void(0)"
+			<img
+				id="uiBoxImg"
+				src="/assets/res/modern.png"
 				onClick="newCss()"
-			>
-				<div id="uiBoxText">Modern</div>
-			</a>
+			/>
 
-			<a
-				style="display: inline-block; color: #ffffff"
-				href="javascript:void(0)"
+			<img
+				id="uiBoxImg"
 				onClick="oldCss()"
-			>
-				<div id="uiBoxText">Rounded</div>
-			</a>
+				src="/assets/res/rounded.png"
+			/>
+
+			<br />
+
+			<div id="uiBoxText" onClick="oldCss()">Modern</div>
+
+			<div id="uiBoxText" onClick="oldCss()">Rounded</div>
 		</div>
 
 		<div class="footer">
 			<p>
-				Fork me on
-				<a href="https://github.com/TheAlphaReturns/unblocked-sites"
-					>GitHub</a
-				>
+				Fork and PR on
+				<a href="https://github.com/TheAlphaReturns/inertia">GitHub</a>
 			</p>
 		</div>
 

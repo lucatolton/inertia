@@ -2,13 +2,13 @@
 <html lang="en-US">
 	<head>
 		<link href="/css/modern.css" id="css" rel="stylesheet" />
-		<title>About - Interia</title>
+		<title>About - Inertia</title>
 	</head>
 
 	<body>
 		<div class="navbar">
 			<a class="left" href="/">Inertia</a>
-			<a href="javascript:void(0)" onClick="enableSettingsOverlay()"
+			<a href="javascript:void(0)" onClick="settingsOverlay()"
 				>Settings</a
 			>
 			<a href="./about.html">About</a>
@@ -17,14 +17,14 @@
 
 		<div class="wrapper">
 			<div class="container">
-				<h1>Intertia</h1>
+				<h1>Inertia</h1>
 				<p>
 					This is a webproxy which started out as a fork of
 					Titaniumnetwork's Alloyproxy, named Unblocked Sites. Since
 					then, it has had many updates, not just to the frontend, but
 					the backend too. Additions such as Google Search and two new
 					UI's, made it stronger that it has ever been. With this
-					update, we have renamed the site "Interia", because this
+					update, we have renamed the site "Inertia", because this
 					object in motion, will stay in motion!
 				</p>
 
@@ -67,46 +67,34 @@
 				close
 			</span>
 
-			<h1>Settings</h1>
+			<h1 style="text-indent: 1.75em">Settings</h1>
 
-			<a
-				style="display: inline-block"
-				href="javascript:void(0)"
+			<h2>User Interface</h2>
+
+			<img
+				id="uiBoxImg"
+				src="/assets/res/modern.png"
 				onClick="newCss()"
-			>
-				<img id="uiBoxImg" src="/assets/res/modern.jpg" />
-			</a>
+			/>
 
-			<a
-				style="display: inline-block"
-				href="javascript:void(0)"
+			<img
+				id="uiBoxImg"
 				onClick="oldCss()"
-			>
-				<img id="uiBoxImg" src="/assets/res/rounded.jpg" />
-			</a>
+				src="/assets/res/rounded.png"
+			/>
 
-			<a
-				style="display: inline-block; color: #ffffff"
-				href="javascript:void(0)"
-				onClick="newCss()"
-			>
-				<div id="uiBoxText">Modern</div>
-			</a>
+			<br />
 
-			<a
-				style="display: inline-block; color: #ffffff"
-				href="javascript:void(0)"
-				onClick="oldCss()"
-			>
-				<div id="uiBoxText">Rounded</div>
-			</a>
+			<div id="uiBoxText" onClick="oldCss()">Modern</div>
+
+			<div id="uiBoxText" onClick="oldCss()">Rounded</div>
 		</div>
 
 		<div class="footer">
 			<p>
-				Project on
+				Fork and PR on
 				<a
-					href="https://github.com/dragonBall561/unblocked-sites"
+					href="https://github.com/TheAlphaReturns/inertia"
 					target="_blank"
 					>GitHub</a
 				>
