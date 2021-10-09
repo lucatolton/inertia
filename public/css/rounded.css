@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Product+Sans");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 * {
 	box-sizing: border-box;
 }
@@ -6,13 +9,14 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #060809;
-	color: #FFF;
+	color: #fff;
 	font-family: Product Sans;
 	font-weight: 400;
 	text-align: center;
 }
 
-h1, h2 {
+h1,
+h2 {
 	font-weight: 400;
 }
 
@@ -44,20 +48,21 @@ header #intro {
 	height: 50px;
 	display: block;
 	text-align: center;
-	
 }
 
-header #github, header #github:active, header #github:hover	{
+header #github,
+header #github:active,
+header #github:hover {
 	height: 50px;
 	width: 205px;
 	font-size: 20px;
 	display: block;
 	text-align: center;
-	color: #FFF;
+	color: #fff;
 }
 
 header #github i {
-	margin: 0px 4px; 
+	margin: 0px 4px;
 }
 
 .container {
@@ -67,39 +72,39 @@ header #github i {
 	margin: 5px 0px;
 	text-align: left;
 	display: block;
-	border-radius: 35px
+	border-radius: 35px;
 }
 
 .form input {
 	width: calc(100% - 154px);
 	height: 50px;
 	left: 0;
-	color: #FFF;
+	color: #fff;
 	padding: 0px 5px;
 	font-family: "Product Sans";
 	background: none;
 	font-size: 14px;
 	border-radius: 35px;
-	border: solid 1px rgb(255, 255, 255, .2);
+	border: solid 1px rgb(255, 255, 255, 0.2);
 	outline: none;
 	transition: border 750ms;
 }
 
-.form input:focus{
+.form input:focus {
 	border: solid 1.2px rgb(255, 255, 255);
 }
 
 .form button {
 	width: 150px;
 	height: 50px;
-	color: #FFF;
+	color: #fff;
 	float: right;
 	padding: 0px 5px;
 	font-family: "Product Sans";
 	font-size: 14px;
 	background: none;
 	border-radius: 35px;
-	border: solid 1px rgb(255, 255, 255, .2);
+	border: solid 1px rgb(255, 255, 255, 0.2);
 	outline: none;
 }
 
@@ -116,9 +121,7 @@ header #github i {
 	margin: auto;
 	margin-top: 10px;
 	border-radius: 35px;
-	
 }
-
 
 .navbar a {
 	float: right;
@@ -144,7 +147,7 @@ header #github i {
 }
 
 .navbar a.active {
-	background-color: #4CAF50;
+	background-color: #4caf50;
 	color: white;
 }
 
@@ -158,4 +161,62 @@ header #github i {
 	color: white;
 	text-align: center;
 	border-radius: 35px 35px 0px 0px;
+}
+
+#settingsOverlay {
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 70%; /* Full width (cover the whole page) */
+	height: 70%; /* Full height (cover the whole page) */
+	top: 15%;
+	left: 15%;
+	right: 15%;
+	bottom: 15%;
+	border-radius: 25px;
+	background-color: #18191a; /* Black background with opacity */
+	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.settingsOverlay span {
+	color: white;
+	height: 50px;
+	width: 50px;
+	margin: 10px 10px 0px 0px;
+	padding: 5px 5px 0px 0px;
+	text-align: right;
+	float: right;
+	font-size: 40px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.settingsOverlay span:hover {
+	background-color: #191e20;
+	color: white;
+	border-radius: 25px;
+}
+
+#uiBoxImg {
+	display: inline-block;
+	width: 350px;
+	height: 160px;
+	border-radius: 25px 25px 0px 0px;
+	margin-left: 30px;
+	margin-right: 30px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#uiBoxText {
+	display: inline-block;
+	width: 350px;
+	height: 35px;
+	background-color: #2b2c2e;
+	border-radius: 0px 0px 25px 25px;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-top: 4.5px;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
 }

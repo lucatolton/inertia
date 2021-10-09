@@ -1,48 +1,83 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<title>Unblocked Sites</title>
-		<link rel="stylesheet" href="css/imports.css">
+		<title>Inertia</title>
+		<link rel="stylesheet" id="css" href="/css/modern.css" />
 	</head>
-	
+
 	<body>
 		<div class="navbar">
-			<a class="left" href="/">Unblocked Sites</a>
-			<a href="https://unblocked-hub.herokuapp.com">Back To Hub</a>
-			<a href="./credits.html">Credits</a>
+			<a class="left" href="/">Inertia</a>
+			<a href="javascript:void(0)" onClick="settingsOverlay()"
+				>Settings</a
+			>
+			<a href="./about.html">About</a>
 			<a href="./changelog.txt">Changelog</a>
 		</div>
 
 		<div class="wrapper">
 			<header>
 				<div id="intro">
-					Welcome to Unblocked Sites!
-					<br>NOTE - The URL of this site will be changed if it gets blocked by my schools admins!
+					Welcome to Inertia Unblocker!
+					<br />Check the
+					<a href="https://discord.gg/r28EPhaMSx">Discord</a> for the
+					new URL if this website gits blocked.
+					<!-- No Discord Yet lol -->
+					<br />By using this site, you agree to Cookies, for Google
+					Analytics and Theme
 				</div>
 			</header>
 
 			<div class="container">
 				<section id="formWrap">
 					<form class="form" id="formInitiate">
-						<input placeholder="  https://example.org/" name="url">
+						<input
+							placeholder="Search Google or Enter URL"
+							name="url"
+							autocomplete="off"
+						/>
 						<button>Go</button>
-					</form>
-					<br>
-					<form class="form" id="gsearch">
-						<input placeholder="  example" name="url">
-						<button>
-							google_G
-							Search
-							</button>
 					</form>
 				</section>
 			</div>
 		</div>
-		
-		<div class="footer">
-			<p>Thanks to <a href="https://github.com/titaniumnetwork-dev/alloy">Alloy</a>
+
+		<div id="settingsOverlay" class="settingsOverlay">
+			<span onClick="disableSettingsOverlay()" class="material-icons">
+				close
+			</span>
+
+			<h1 style="text-indent: 1.75em">Settings</h1>
+
+			<h2>User Interface</h2>
+
+			<img
+				id="uiBoxImg"
+				src="/assets/res/modern.png"
+				onClick="newCss()"
+			/>
+
+			<img
+				id="uiBoxImg"
+				onClick="oldCss()"
+				src="/assets/res/rounded.png"
+			/>
+
+			<br />
+
+			<div id="uiBoxText" onClick="oldCss()">Modern</div>
+
+			<div id="uiBoxText" onClick="oldCss()">Rounded</div>
 		</div>
-		
+
+		<div class="footer">
+			<p>
+				Fork and PR on
+				<a href="https://github.com/TheAlphaReturns/inertia">GitHub</a>
+			</p>
+		</div>
+
+		<script src="/assets/ui.js"></script>
 		<script src="/assets/main.js"></script>
 	</body>
 </html>
