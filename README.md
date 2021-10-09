@@ -8,9 +8,9 @@
 
 ## Deploy Instructions
 
-1. Clone this repo on repl, heroku, or locally. If local, install node.js.
-1. Run `npm install`
-1. Run the app with `npm start`
+1. Clone this repo on repl, heroku, or locally. If local, install node.js and yarn.
+1. Run `yarn install` to install dependencies
+1. Run the app with `yarn start`
 1. By default; it should start on 0.0.0.0:8080. It will give the used address and port in the output
 
 ## How to use
