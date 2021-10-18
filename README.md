@@ -29,6 +29,6 @@
 }
 ```
 
-1. IP - The IP of the site (http://ip:port)
-1. Port - The Port of the site (http://ip:port)
+1. IP - The IP of the site `(http://ip:port)`
+1. Port - The Port of the site `(http://ip:port)`
 1. blockedHostnames - A string of blocked urls (e.g. ["https://example.com", "http://example2.com"])
