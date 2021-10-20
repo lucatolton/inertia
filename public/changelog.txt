@@ -1,11 +1,18 @@
-Unblocked Sites 1.6r1; urgency=medium
+Inertia (1.6r2); urgency=medium
+
+	* Updated error.html
+	* Tried to fix site erroring
+
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Wed, 20 Oct 2021 11:55:00 -0500
+
+Inertia (1.6r1); urgency=medium
 	
 	* BugFixes
 	* Site Icon
 
--- Angad Tendulkar <angad.tendulkar@gmail.com> Set, 9 Oct 2021 3:10:00 -0500
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Sat, 9 Oct 2021 3:10:00 -0500
 
-Unblocked Sites (1.6); urgency=medium
+Inertia (1.6); urgency=medium
 
 	* Redesign UI
 	* Option to change between old and new UI
