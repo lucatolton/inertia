@@ -22,7 +22,7 @@
 	},
 	"scripts": {
 		"cli:format": "prettier --config ./.prettierrc --ignore-path ./.prettierignore --write .",
-		"start": "node server.js"
+		"start": "sh run.sh"
 	},
 	"repository": {
 		"type": "git",
