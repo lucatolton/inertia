@@ -3,6 +3,7 @@
 ## About
 
 -   This is a small web proxy for unblocking websites
+-   This branch is for temporarily shut-down deployments
 -   Status: Working
 -   Maintainer: Angad Tendulkar angad.tendulkar@gmail.com
 
