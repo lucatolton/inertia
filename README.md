@@ -32,3 +32,24 @@
 1. IP - The IP of the site `(http://ip:port)`
 1. Port - The Port of the site `(http://ip:port)`
 1. blockedHostnames - A string of blocked urls (e.g. ["https://example.com", "http://yahoo.com"])
+
+## Rules of Contribution
+
+1. Must be formatted properly. Code is a pain to reformat.
+	- **Must use hard tabs.** 2/4 Spaces are ugly.
+	- Must have `<head>` and `<body>` one indent in front of `<html>` 
+	- If you are not sure, format using prettier: <br>
+		`yarn run cli:format` or `prettier --config ./.prettierrc --write .`
+	- Example of good code:
+		```html
+		<!DOCTYPE html>
+		<html>
+			<head>
+				...
+			</head>
+			
+			<body>
+				...
+			</body>
+		</html>
+		```
