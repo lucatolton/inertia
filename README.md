@@ -39,7 +39,7 @@
 	- **Must use hard tabs.** 2/4 Spaces are ugly.
 	- Must have `<head>` and `<body>` one indent in front of `<html>` 
 	- If you are not sure, format using prettier: <br>
-		`yarn run cli:format` or `prettier --config ./.prettierrc --write .`
+		`yarn run cli:format` or `prettier --config ./.prettierrc --ignore-path ./.prettierignore --write .`
 	- Example of good code:
 		```html
 		<!DOCTYPE html>
